@@ -7,7 +7,50 @@
     <link rel="shortcut icon" href="./assets/imgs/favicon-32x32.png" type="image/x-icon" />
     <title>Social media Dashboard</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-red-500 text-white p-8">Hello world!</h1>
+  <body class="dark:bg-custom-dark font-inter">
+    <!-- <div class="flex min-h-screen items-center justify-center px-12 bg-white dark:bg-gray-950">
+      <div class="max-w-md rounded pt-2 bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800">
+        <div class="rounded p-10 bg-white dark:bg-gray-900">
+          <p class="text-gray-700 dark:text-gray-300">I absolutely love Tailus! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze.</p>
+
+          <div class="mt-8 flex gap-4 items-center">
+            <img class="h-12 w-12 rounded-full" src="https://pbs.twimg.com/profile_images/1599029039297077249/p0znhFdE_400x400.jpg" alt="" />
+            <div>
+              <h3 class="text-lg font-medium text-gray-700 dark:text-white">Oketa Fred</h3>
+              <span class="text-sm tracking-wide text-gray-600 dark:text-gray-400">Fullstack Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <main class="main-container">
+      <!-- Heaer part -->
+      <header class="container">
+        <div class="flex flex-wrap gap-4 justify-between py-8">
+          <div class="title">
+            <h1 class="dark:text-white font-bold md:text-4xl text-2xl">Social Media Dashboard</h1>
+            <span class="dark:text-custom-purple text-sm font-bold block mt-1 text-custom-slate">Total Followers: 23,004</span>
+          </div>
+          <div class="toggler md:w-auto w-full">
+            <label class="h-6 relative md:inline-block flex justify-between" for="dark_mode">
+              <span class="text-custom-gray dark-label dark:text-custom-purple mr-3 font-bold text-sm">Dark Mode</span>
+              <input id="dark_mode" type="checkbox" />
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <section class="container">
+        <div class="py-5 grid lg:grid-cols-4 md:grid-cols-2 gap-6" id="followerCardsArea"></div>
+      </section>
+      <section class="container mt-5">
+        <div class="title">
+          <h1 class="dark:text-white text-custom-gray font-bold text-2xl">Overview - Today</h1>
+        </div>
+        <div class="py-6 grid lg:grid-cols-4 md:grid-cols-2 gap-6" id="todayOverview"></div>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
